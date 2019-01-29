@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayAdapter arrayAdapter;
     BluetoothAdapter bluetoothAdapter;
 
+    /** Szukamy połączeń i wypisujemy je do tablicy, która jest czyszczona przy ponownym użyciu
+     */
     private final BroadcastReceiver broadcastReceiver=new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -66,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    /** Poprzez nacisniecie przycisku rozpoczynamy szukanie połączeń Bluetooth i tym samym wyłączamy możliwość przyciśniecia przycisku znowu
+     */
     public void searchClicked(View view){
         statusTextView.setText("Searching...");
         search.setEnabled(false);

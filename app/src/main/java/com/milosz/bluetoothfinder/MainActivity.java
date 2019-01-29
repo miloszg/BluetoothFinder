@@ -1,4 +1,9 @@
 package com.milosz.bluetoothfinder;
+/** Represents an employee.
+ * @author Miłosz Gustawski
+ * @version 1.5
+ * @since 1.0
+ */
 
 import android.Manifest;
 import android.bluetooth.BluetoothAdapter;
